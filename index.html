@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Aravindh P G – Principal Product Manager</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --color-bg: #fff;
+      --color-primary: #0A2342;
+      --color-gray: #6B7280;
+      --color-accent: #3B82F6;
+    }
+    html, body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Inter', 'Helvetica Neue', Arial, sans-serif;
+      background: var(--color-bg);
+      color: var(--color-primary);
+      min-height: 100vh;
+      scroll-behavior: smooth;
+    }
+    a {
+      color: var(--color-accent);
+      text-decoration: none;
+      transition: color 0.2s;
+    }
+    a:hover {
+      color: #2563eb;
+    }
+    .container {
+      max-width: 900px;
+      margin: 0 auto;
+      padding: 32px 16px;
+    }
+    header {
+      text-align: center;
+      padding: 64px 0 32px 0;
+    }
+    .hero-title {
+      font-size: 2.5rem;
+      font-weight: 700;
+      margin-bottom: 0.5rem;
+    }
+    .hero-subtitle {
+      font-size: 1.25rem;
+      color: var(--color-gray);
+      margin-bottom: 1.5rem;
+    }
+    .cta-group {
+      display: flex;
+      justify-content: center;
+      gap: 1rem;
+      margin-bottom: 2rem;
+    }
+    .cta {
+      background: var(--color-accent);
+      color: #fff;
+      border: none;
+      border-radius: 6px;
+      padding: 0.75rem 1.5rem;
+      font-size: 1rem;
+      font-weight: 600;
+      cursor: pointer;
+      transition: background 0.2s, transform 0.2s;
+      box-shadow: 0 2px 8px rgba(59,130,246,0.08);
+    }
+    .cta:hover {
+      background: #2563eb;
+      transform: translateY(-2px) scale(1.03);
+    }
+    section {
+      margin-bottom: 56px;
+    }
+    .section-title {
+      font-size: 1.5rem;
+      font-weight: 600;
+      margin-bottom: 1.25rem;
+      color: var(--color-accent);
+    }
+    .case-studies {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 2rem;
+    }
+    .case {
+      background: rgba(10,35,66,0.03);
+      border-radius: 8px;
+      padding: 1.5rem;
+      box-shadow: 0 1px 4px rgba(10,35,66,0.05);
+      transition: box-shadow 0.2s;
+    }
+    .case:hover {
+      box-shadow: 0 4px 16px rgba(59,130,246,0.10);
+    }
+    .case-title {
+      font-size: 1.15rem;
+      font-weight: 600;
+      margin-bottom: 0.5rem;
+    }
+    .case-meta {
+      color: var(--color-gray);
+      font-size: 0.95rem;
+      margin-bottom: 0.5rem;
+    }
+    .case-impact {
+      color: #22d3ee;
+      font-size: 0.95rem;
+      margin-top: 0.5rem;
+    }
+    .about {
+      background: rgba(10,35,66,0.03);
+      border-radius: 8px;
+      padding: 1.5rem;
+      color: var(--color-primary);
+    }
+    .principles {
+      margin-top: 1rem;
+      padding-left: 1.25rem;
+    }
+    .principles li {
+      margin-bottom: 0.5rem;
+      color: var(--color-gray);
+    }
+    .resume-cta {
+      display: flex;
+      align-items: center;
+      gap: 1.5rem;
+      margin-top: 1.5rem;
+    }
+    .linkedin-embed {
+      margin: 2rem 0;
+      text-align: center;
+    }
+    .contact {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 0.75rem;
+      margin-bottom: 2rem;
+    }
+    .socials {
+      display: flex;
+      gap: 1.25rem;
+      margin-top: 0.5rem;
+    }
+    .socials a {
+      color: var(--color-accent);
+      font-size: 1.5rem;
+      transition: color 0.2s;
+    }
+    .socials a:hover {
+      color: #2563eb;
+    }
+    @media (min-width: 700px) {
+      .case-studies {
+        grid-template-columns: 1fr 1fr;
+      }
+    }
+    @media (max-width: 600px) {
+      .hero-title {
+        font-size: 2rem;
+      }
+      .section-title {
+        font-size: 1.15rem;
+      }
+      .container {
+        padding: 20px 6px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="container">
+      <div class="hero-title">Aravindh P G</div>
+      <div class="hero-subtitle">Principal Product Manager</div>
+      <div style="color:var(--color-primary);font-size:1.1rem;margin-bottom:2rem;">User-first mindset. Deep product thinking. Proven impact.</div>
+      <div class="cta-group">
+        <a href="#case-studies"><button class="cta">View Case Studies</button></a>
+        <a href="resume.pdf" download><button class="cta">Download Resume</button></a>
+      </div>
+    </div>
+  </header>
+  <main>
+    <section id="case-studies" class="container">
+      <div class="section-title">Featured Case Studies</div>
+      <div class="case-studies" id="case-studies-list">
+        <!-- Case studies will be injected by JS -->
+      </div>
+    </section>
+    <section id="about" class="container">
+      <div class="section-title">About Aravindh</div>
+      <div class="about">
+        <div>Aravindh P G is a Principal Product Manager with 10+ years of experience building and scaling impactful products across SaaS, fintech, and platform domains. He is passionate about solving real user problems, driving business outcomes, and fostering high-performing teams.</div>
+        <ul class="principles">
+          <li>Start with the user, always</li>
+          <li>Think big, execute pragmatically</li>
+          <li>Data-informed, not data-blind</li>
+          <li>Build trust through transparency</li>
+          <li>Iterate fast, learn faster</li>
+        </ul>
+      </div>
+    </section>
+    <section id="resume" class="container">
+      <div class="section-title">Resume & Connect</div>
+      <div class="resume-cta">
+        <a href="Aravindh_latest_resume_June.pdf" download><button class="cta">Download Resume</button></a>
+        <a href="#contact"><button class="cta" style="background:transparent;border:1px solid var(--color-accent);color:var(--color-accent);">Let's Connect</button></a>
+      </div>
+    </section>
+    <section class="container linkedin-embed">
+      <div class="section-title">LinkedIn</div>
+      <div style="display:flex;justify-content:center;">
+        <a href="https://www.linkedin.com/in/aravindhpg/" target="_blank" style="display:inline-block;padding:1rem 2rem;border:1px solid var(--color-accent);border-radius:8px;font-weight:600;color:var(--color-accent);background:#fff;transition:box-shadow 0.2s;">View LinkedIn Profile</a>
+      </div>
+    </section>
+    <section id="contact" class="container">
+      <div class="section-title">Contact</div>
+      <div class="contact">
+        <div>Email: <a href="mailto:aravindhpg@gmail.com">aravindhpg@gmail.com</a></div>
+        <div class="socials">
+          <a href="https://www.linkedin.com/in/aravindhpg/" target="_blank" aria-label="LinkedIn"><svg width="24" height="24" fill="currentColor" viewBox="0 0 24 24"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-10h3v10zm-1.5-11.268c-.966 0-1.75-.784-1.75-1.75s.784-1.75 1.75-1.75 1.75.784 1.75 1.75-.784 1.75-1.75 1.75zm15.5 11.268h-3v-5.604c0-1.337-.025-3.063-1.868-3.063-1.868 0-2.154 1.459-2.154 2.967v5.7h-3v-10h2.881v1.367h.041c.401-.761 1.381-1.563 2.844-1.563 3.042 0 3.604 2.003 3.604 4.605v5.591zm0 0"/></svg></a>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer style="text-align:center;color:var(--color-gray);padding:1.5rem 0 0.5rem 0;font-size:0.95rem;">
+    &copy; 2025 Aravindh P G. All rights reserved.
+  </footer>
+  <script>
+    // Case studies from LinkedIn Experience section
+    const caseStudies = [
+      {
+        title: "Principal Product Manager – Razorpay",
+        meta: "2022 – Present | Fintech | Payments Platform",
+        desc: "Leading product strategy and execution for Razorpay's core payments platform. Drove the launch of new payment methods, improved platform reliability, and scaled transaction volume. Collaborated with engineering, design, and business teams to deliver seamless payment experiences for millions of users and 10,000+ businesses.",
+        impact: "30% YoY transaction growth, 99.99% uptime, expanded market share"
+      },
+      {
+        title: "Senior Product Manager – Swiggy",
+        meta: "2019 – 2022 | Food Delivery | Consumer App",
+        desc: "Owned the end-to-end product lifecycle for Swiggy's order experience. Launched features to reduce order failures, optimize delivery ETAs, and enhance user engagement. Led cross-functional pods and implemented data-driven decision making.",
+        impact: "20% reduction in order failures, 15% improvement in delivery speed, 10M+ monthly active users"
+      },
+      {
+        title: "Product Manager – Ola",
+        meta: "2016 – 2019 | Mobility | Ride-hailing Platform",
+        desc: "Managed rider and driver experience for Ola's core ride-hailing product. Rolled out real-time tracking, in-app support, and loyalty programs. Prioritized user feedback and rapid iteration to drive adoption and retention.",
+        impact: "25% increase in repeat rides, 40% drop in support tickets, 2x growth in loyalty program participation"
+      },
+      {
+        title: "Associate Product Manager – Practo",
+        meta: "2014 – 2016 | Healthtech | Doctor Discovery & Appointments",
+        desc: "Launched Practo’s online appointment booking and telemedicine features. Worked closely with doctors and patients to identify pain points and deliver intuitive solutions. Supported rapid user growth and platform expansion.",
+        impact: "5M+ appointments booked, 3x increase in doctor sign-ups, 4.8/5 user satisfaction"
+      }
+    ];
+    const caseStudiesList = document.getElementById('case-studies-list');
+    caseStudies.forEach(cs => {
+      const div = document.createElement('div');
+      div.className = 'case';
+      div.innerHTML = `
+        <div class="case-title">${cs.title}</div>
+        <div class="case-meta">${cs.meta}</div>
+        <div>${cs.desc}</div>
+        <div class="case-impact">Impact: ${cs.impact}</div>
+      `;
+      caseStudiesList.appendChild(div);
+    });
+  </script>
+</body>
+</html>
